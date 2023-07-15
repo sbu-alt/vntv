@@ -1,0 +1,10 @@
+services:
+  epg:
+    image: node:18
+    ports:
+      - 9000:3000
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./epg:/epg
+
